@@ -10,17 +10,23 @@ for (var i = 1; i <= 100; i++) {
 
 // 2 Per i multipli di 3 stampi “Fizz” al posto del numero;
   if (i % 3 === 0) {
-    numeri.splice(-1, 1, 'Fizz');
+    // numeri.splice(-1, 1, 'Fizz');
+    numeri.pop(3);
+    numeri.push("Fizz");
   }
 
-  // 3 Per i multipli di 5 stampi “Fizz” al posto del numero;
+  // 3 Per i multipli di 5 stampi “Buzz” al posto del numero;
   if (i % 5 === 0) {
-    numeri.splice(-1, 1, 'Buzz');
+    // numeri.splice(-1, 1, 'Buzz');
+    numeri.pop(5);
+    numeri.push("Buzz");
   }
 
-  // 4 Per i multipli di 3 e 5 stampi “Fizz” al posto del numero;
+  // 4 Per i multipli di 3 e 5 stampi “FizzBuzz” al posto del numero;
   if (i % 15 === 0) {
-    numeri.splice(-1, 1, 'FizzBuzz');
+    // numeri.splice(-1, 1, 'FizzBuzz');
+    numeri.pop(15);
+    numeri.push("FizzBuzz");
   }
 
 }
